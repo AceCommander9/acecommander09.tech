@@ -396,7 +396,160 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <SectionHeader title="Get In Touch" subtitle="Let's work together" />
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
+              <p className="text-gray-400 mb-6">
+                I'm currently available for freelance work and full-time positions. If you have a project that needs
+                some creative touch, I'd love to hear about it.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <Mail className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-300">acecommander09@example.com</span>
+                </div>
+                <div className="flex items-center">
+                  <Github className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-300">github.com/acecommander09</span>
+                </div>
+                <div className="flex items-center">
+                  <Linkedin className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-300">linkedin.com/in/acecommander09</span>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <h4 className="text-lg font-semibold mb-2">Connect with me</h4>
+                <div className="flex gap-4">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full border-green-500 text-green-500 hover:bg-green-500/10"
+                  >
+                    <Github className="h-5 w-5" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full border-green-500 text-green-500 hover:bg-green-500/10"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="rounded-full border-green-500 text-green-500 hover:bg-green-500/10"
+                  >
+                    <Mail className="h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="bg-zinc-900/50 border border-green-500/20 rounded-lg p-6">
+                <h3 className="text-2xl font-bold mb-4">Send a Message</h3>
+                <form className="space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium text-gray-300">
+                        Name
+                      </label>
+                      <input
+                        id="name"
+                        type="text"
+                        className="w-full px-3 py-2 bg-black/50 border border-green-500/20 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-medium text-gray-300">
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        className="w-full px-3 py-2 bg-black/50 border border-green-500/20 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50"
+                        placeholder="Your email"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="subject" className="text-sm font-medium text-gray-300">
+                      Subject
+                    </label>
+                    <input
+                      id="subject"
+                      type="text"
+                      className="w-full px-3 py-2 bg-black/50 border border-green-500/20 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium text-gray-300">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      rows={4}
+                      className="w-full px-3 py-2 bg-black/50 border border-green-500/20 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-black">Send Message</Button>
+                </form>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 bg-black border-t border-green-500/20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center gap-2 mb-4 md:mb-0">
+              <Terminal className="h-5 w-5 text-green-500" />
+              <span className="font-mono text-lg font-bold">
+                AceCommander<span className="text-green-500">09</span>
+              </span>
+            </div>
+            <div className="text-gray-400 text-sm">
+              &copy; {new Date().getFullYear()} AceCommander09. All rights reserved.
+            </div>
+            <div className="flex gap-4 mt-4 md:mt-0">
+              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
+                <Github className="h-5 w-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
+                <Mail className="h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
 
 // Section Header Component
 function SectionHeader({ title, subtitle }) {
@@ -452,4 +605,3 @@ function TypewriterEffect({ text }) {
     </h2>
   )
 }
-
