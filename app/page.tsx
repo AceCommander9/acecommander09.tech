@@ -15,7 +15,7 @@ export default function Home() {
   }, [])
 
   const handleScroll = () => {
-    const sections = ["home", "about", "skills", "projects", "contact"]
+    const sections = ["home", "about", "skills", "projects"]
     const scrollPosition = window.scrollY + 100
 
     for (const section of sections) {
