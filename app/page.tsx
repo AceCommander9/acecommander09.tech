@@ -178,20 +178,17 @@ export default function Home() {
             >
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <p className="text-gray-400 mb-4">
-                With over 5 years of experience in software development, I've worked on a diverse range of projects from
-                small startups to enterprise applications. My passion for clean code and innovative solutions drives me
-                to continuously learn and improve.
+                I am a Java Coder, I make Minecraft mods and I design 3D models.
               </p>
               <p className="text-gray-400 mb-4">
-                I specialize in building robust web applications using modern technologies like React, Next.js, and
-                Node.js. My approach combines technical excellence with a deep understanding of user needs.
+                I have made over 6 Minecraft mods on Modrinth and over 5 3D models on Makerworld.
               </p>
               <div className="flex gap-4 mt-6">
                 <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Button>
                 <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
-                  <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+                  <Discord className="mr-2 h-4 w-4" /> Discord
                 </Button>
               </div>
             </motion.div>
@@ -208,12 +205,9 @@ export default function Home() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Frontend Development (React, Next.js, TypeScript)",
-                  "Backend Development (Node.js, Express, NestJS)",
-                  "Database Design (SQL, NoSQL)",
-                  "API Development (REST, GraphQL)",
-                  "UI/UX Design Principles",
-                  "DevOps & CI/CD Pipelines",
+                  "3D modeling on Makerworld in Fusion 360",
+                  "Java coding",
+                  "Minecraft Mods",
                 ].map((skill, index) => (
                   <motion.li
                     key={index}
@@ -240,34 +234,29 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {[
               {
-                title: "Frontend",
+                title: "Java",
                 icon: <Code className="h-10 w-10 text-green-500" />,
-                skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+                skills: ["Minecraft mods", "This website", "React", "Javascript"],
               },
               {
-                title: "Backend",
+                title: "Python",
                 icon: <Terminal className="h-10 w-10 text-green-500" />,
-                skills: ["Node.js", "Express", "NestJS", "Python", "GraphQL"],
+                skills: ["Idle", "Minecraft"],
               },
               {
-                title: "Database",
+                title: "3D modeling",
                 icon: <Rocket className="h-10 w-10 text-green-500" />,
-                skills: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "SQL"],
-              },
-              {
-                title: "DevOps",
-                icon: <Github className="h-10 w-10 text-green-500" />,
-                skills: ["Docker", "Kubernetes", "CI/CD", "AWS", "Vercel"],
+                skills: ["Fushion 360", "Blender", "Blockbench", "Shapr3D"],
               },
               {
                 title: "Tools",
                 icon: <Terminal className="h-10 w-10 text-green-500" />,
-                skills: ["Git", "VS Code", "Figma", "Postman", "Jest"],
+                skills: ["GitHub", "VS Code", "Vercel"],
               },
               {
                 title: "Other",
                 icon: <Code className="h-10 w-10 text-green-500" />,
-                skills: ["Agile", "UI/UX Design", "RESTful APIs", "WebSockets", "Testing"],
+                skills: ["Agile", "UI/UX Design", "WebSockets", "Testing"],
               },
             ].map((category, index) => (
               <motion.div
@@ -309,7 +298,7 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-zinc-900">
         <div className="container mx-auto px-4">
-          <SectionHeader title="Featured Projects" subtitle="Some of my recent work" />
+          <SectionHeader title="Featured Projects" subtitle="Projects I have worked on recently" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {[
