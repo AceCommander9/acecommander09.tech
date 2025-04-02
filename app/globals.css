@@ -1,41 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 @layer base {
   :root {
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
-
+ 
     --card: 0 0% 4%;
     --card-foreground: 0 0% 100%;
-
+ 
     --popover: 0 0% 4%;
     --popover-foreground: 0 0% 100%;
-
+ 
     --primary: 142 76% 47%;
     --primary-foreground: 0 0% 0%;
-
+ 
     --secondary: 240 4% 16%;
     --secondary-foreground: 0 0% 100%;
-
+ 
     --muted: 240 4% 16%;
     --muted-foreground: 240 5% 65%;
-
+ 
     --accent: 142 76% 47%;
     --accent-foreground: 0 0% 0%;
-
+ 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
-
+ 
     --border: 142 76% 47%;
     --input: 142 76% 47%;
     --ring: 142 76% 47%;
-
+ 
     --radius: 0.5rem;
   }
 }
-
+ 
 @layer base {
   * {
     @apply border-border;
@@ -49,31 +49,22 @@
   .animate-ping-slow {
     animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
-
+  
   .animation-delay-500 {
     animation-delay: 500ms;
   }
-  \
-  .animation-delay-0,0.2,1) infinite
-  ;
-}
-
-.animation-delay-500 {
-  animation-delay: 500ms;
-}
-
-.animation-delay-1000 {
-  animation-delay: 1000ms;
-}
-
-.animate-blink {
-  animation: blink 1s step-end infinite;
-}
+  
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
 }
 
 @keyframes blink {
-  from,
-  to {
+  from, to {
     opacity: 1;
   }
   50% {
@@ -81,9 +72,19 @@
   }
 }
 
-.bg-grid-pattern {
-  background-image: linear-gradient(to right, rgba(0, 255, 0, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
