@@ -6,6 +6,19 @@ import { Code, Rocket, Terminal, Github, Mail, ExternalLink, ChevronRight } from
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
+export default
+  function Home() {
+    return (
+      <div>
+        <h1>Home
+          Page</h1>
+        <p>Your
+          website
+          content
+          here</p>
+        </div>
+      )
+  }
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home")
   const [loaded, setLoaded] = useState(false)
