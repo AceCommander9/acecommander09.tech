@@ -59,7 +59,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="hidden md:flex gap-6"
           >
-            {["home", "about", "skills", "projects", "contact"].map((section, index) => (
+            {["home", "about", "skills", "projects"].map((section, index) => (
               <a
                 key={section}
                 href={`#${section}`}
