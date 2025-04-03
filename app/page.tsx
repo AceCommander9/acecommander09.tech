@@ -133,9 +133,6 @@ export default function Home() {
                       <Button className="bg-green-500 hover:bg-green-600 text-black">
                         View Projects <ChevronRight className="ml-2 h-4 w-4" />
                       </Button>
-                      <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
-                        Contact Me
-                      </Button>
                     </motion.div>
                   </>
                 )}
