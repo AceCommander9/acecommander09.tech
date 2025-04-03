@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Code, Rocket, Terminal, Github, Linkedin, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { Code, Rocket, Terminal, Github, Discord, Mail, ExternalLink, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -187,7 +187,7 @@ export default function Home() {
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Button>
                 <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
-                  <Linkedin className="mr-2 h-4 w-4" /> Linkedin
+                  <Discord className="mr-2 h-4 w-4" /> Discord
                 </Button>
               </div>
             </motion.div>
@@ -412,7 +412,7 @@ export default function Home() {
                 <Github className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
-                <Linkedin className="h-5 w-5" />
+                <Discord className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
                 <Mail className="h-5 w-5" />
