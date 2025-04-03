@@ -1,3 +1,4 @@
+// pages/whatever.js
 export default function WhateverPage() {
-  return <h1>Custom text for /whatever</h1>;
+  return <h1>Hello from /whatever!</h1>;
 }
