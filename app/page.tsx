@@ -186,9 +186,6 @@ export default function Home() {
                 <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Button>
-                <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
-                  <Discord className="mr-2 h-4 w-4" /> Discord
-                </Button>
               </div>
             </motion.div>
 
