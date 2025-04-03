@@ -409,9 +409,6 @@ export default function Home() {
                 <Github className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
-                <Discord className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
