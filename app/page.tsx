@@ -114,7 +114,7 @@ export default function Home() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.4 }}
                     >
-                      <TypewriterEffect text="Python Coder | Java Coder | React Coder" />
+                      <TypewriterEffect text="Python Coder | Java Coder | 3D Modeler" />
                     </motion.div>
                     <motion.p
                       initial={{ opacity: 0, y: 20 }}
@@ -122,8 +122,7 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: 0.8 }}
                       className="text-gray-400 mt-4 mb-6 max-w-lg"
                     >
-                      Crafting elegant solutions to complex problems. Specializing in modern web technologies and
-                      scalable architecture.
+                      Designing 3D models, Minecraft Mods, Python Scripts
                     </motion.p>
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
