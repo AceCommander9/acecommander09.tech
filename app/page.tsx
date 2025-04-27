@@ -417,7 +417,7 @@ export default function Home() {
 }
 
 // Section Header Component
-function SectionHeader({ title, subtitle }) {
+function SectionHeader({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <div className="text-center max-w-2xl mx-auto">
       <motion.div
@@ -446,7 +446,7 @@ function SectionHeader({ title, subtitle }) {
 }
 
 // Typewriter Effect Component
-function TypewriterEffect({ text }) {
+function TypewriterEffect({ text }: { text: string }) {
   const [displayText, setDisplayText] = useState("")
 
   useEffect(() => {
