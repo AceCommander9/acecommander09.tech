@@ -307,41 +307,41 @@ export default function Home() {
                 description:
                   "A Minecaft mod which adds various new structures.",
                 tech: ["Modrinth", "Neoforge", "Datapack", "Fabric"],
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/projects/discoveria.jpg",
               },
               {
                 title: "Craftable Armour Trims",
                 description:
                   "A mod which allows you to craft armour trims.",
                 tech: ["Modrinth", "Neoforge", "Fabric", "Datapack"],
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/projects/craftable-armour-trims.jpg",
               },
               {
                 title: "Subnautica in Minecraft",
                 description: 
                   "A modpack which adds a bunch of mods to make Minecraft the new Subnautica!",
                 tech: ["Modrinth", "Neoforge", "Modpack", "Game"],
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/projects/subnautica-in-minecraft.jpg",
               },
               {
                 title: "AceCommander09.tech",
                 description:
                   "This website your on right now!.",
                 tech: ["TypeScript", "React", "Javascript", "Node.js"],
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/projects/acecommander09-tech.jpg",
               },
               {
                 title: "Call of Duty in Minecraft",
                 description:
                   "A modpack which adds call of duty into Minecraft with popular maps and mods!",
                 tech: ["Modrinth", "Neoforge", "Minecraft", "Game"],
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/projects/call-of-duty-in-minecraft.jpg",
               },
               {
                 title: "Minecraft Cathederal House",
                 description: "A cool 3D printable model of a Minecraft Cathederal!",
                 tech: ["Makerworld", "Fusion360", "BambuLab", "3D"],
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/projects/minecraft-cathedral-house.jpg",
               },
             ].map((project, index) => (
               <motion.div
