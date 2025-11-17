@@ -308,6 +308,7 @@ export default function Home() {
                   "A Minecaft mod which adds various new structures.",
                 tech: ["Modrinth", "Neoforge", "Datapack", "Fabric"],
                 image: "/projects/discoveria.jpg",
+                link: "",
               },
               {
                 title: "Craftable Armour Trims",
@@ -315,6 +316,7 @@ export default function Home() {
                   "A mod which allows you to craft armour trims.",
                 tech: ["Modrinth", "Neoforge", "Fabric", "Datapack"],
                 image: "/projects/craftable-armour-trims.jpg",
+                link: "",
               },
               {
                 title: "Subnautica in Minecraft",
@@ -322,6 +324,7 @@ export default function Home() {
                   "A modpack which adds a bunch of mods to make Minecraft the new Subnautica!",
                 tech: ["Modrinth", "Neoforge", "Modpack", "Game"],
                 image: "/projects/subnautica-in-minecraft.jpg",
+                link: "",
               },
               {
                 title: "AceCommander09.tech",
@@ -329,6 +332,7 @@ export default function Home() {
                   "This website your on right now!.",
                 tech: ["TypeScript", "React", "Javascript", "Node.js"],
                 image: "/projects/acecommander09-tech.jpg",
+                link: "",
               },
               {
                 title: "Call of Duty in Minecraft",
@@ -336,12 +340,14 @@ export default function Home() {
                   "A modpack which adds call of duty into Minecraft with popular maps and mods!",
                 tech: ["Modrinth", "Neoforge", "Minecraft", "Game"],
                 image: "/projects/call-of-duty-in-minecraft.jpg",
+                link: "",
               },
               {
                 title: "Minecraft Cathederal House",
                 description: "A cool 3D printable model of a Minecraft Cathederal!",
                 tech: ["Makerworld", "Fusion360", "BambuLab", "3D"],
                 image: "/projects/minecraft-cathedral-house.jpg",
+                link: "",
               },
             ].map((project, index) => (
               <motion.div
@@ -379,6 +385,7 @@ export default function Home() {
                         variant="outline"
                         size="sm"
                         className="border-green-500 text-green-500 hover:bg-green-500/10"
+                        onClick={() => project.link && window.open(project.link, "_blank")}
                       >
                         View Project <ExternalLink className="ml-2 h-3 w-3" />
                       </Button>
