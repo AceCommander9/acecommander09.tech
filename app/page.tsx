@@ -308,7 +308,7 @@ export default function Home() {
                   "A Minecaft mod which adds various new structures.",
                 tech: ["Modrinth", "Neoforge", "Datapack", "Fabric"],
                 image: "/projects/discoveria.jpg",
-                link: "",
+                link: "https://modrinth.com/datapack/discoveria",
               },
               {
                 title: "Craftable Armour Trims",
@@ -316,7 +316,7 @@ export default function Home() {
                   "A mod which allows you to craft armour trims.",
                 tech: ["Modrinth", "Neoforge", "Fabric", "Datapack"],
                 image: "/projects/craftable-armour-trims.jpg",
-                link: "",
+                link: "https://modrinth.com/datapack/craftable-armour-trims",
               },
               {
                 title: "Subnautica in Minecraft",
@@ -324,7 +324,7 @@ export default function Home() {
                   "A modpack which adds a bunch of mods to make Minecraft the new Subnautica!",
                 tech: ["Modrinth", "Neoforge", "Modpack", "Game"],
                 image: "/projects/subnautica-in-minecraft.jpg",
-                link: "",
+                link: "https://modrinth.com/modpack/subnautica-in-mc",
               },
               {
                 title: "AceCommander09.tech",
@@ -332,7 +332,7 @@ export default function Home() {
                   "This website your on right now!.",
                 tech: ["TypeScript", "React", "Javascript", "Node.js"],
                 image: "/projects/acecommander09-tech.jpg",
-                link: "",
+                link: "https://www.acecommander09.tech/",
               },
               {
                 title: "Call of Duty in Minecraft",
@@ -340,14 +340,14 @@ export default function Home() {
                   "A modpack which adds call of duty into Minecraft with popular maps and mods!",
                 tech: ["Modrinth", "Neoforge", "Minecraft", "Game"],
                 image: "/projects/call-of-duty-in-minecraft.jpg",
-                link: "",
+                link: "https://modrinth.com/modpack/call-of-duty-in-mc",
               },
               {
                 title: "Minecraft Cathederal House",
                 description: "A cool 3D printable model of a Minecraft Cathederal!",
                 tech: ["Makerworld", "Fusion360", "BambuLab", "3D"],
                 image: "/projects/minecraft-cathedral-house.jpg",
-                link: "",
+                link: "https://makerworld.com/en/models/580538-minecraft-cathedral-house#profileId-501436",
               },
             ].map((project, index) => (
               <motion.div
