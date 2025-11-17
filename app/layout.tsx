@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AceCommander09.vercel.app',
+  title: 'AceCommander09.tech',
   description: 'AceCommander09 Official Website',
   generator: 'acecommander09',
 }
