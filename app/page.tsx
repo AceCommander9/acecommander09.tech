@@ -303,43 +303,44 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {[
               {
-                title: "E-Commerce Platform",
+                title: "Discoveria",
                 description:
-                  "A full-stack e-commerce solution with payment processing, inventory management, and analytics dashboard.",
-                tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
+                  "A Minecaft mod which adds various new structures.",
+                tech: ["Modrinth", "Neoforge", "Datapack", "Fabric"],
                 image: "/placeholder.svg?height=200&width=400",
               },
               {
-                title: "AI Content Generator",
+                title: "Craftable Armour Trims",
                 description:
-                  "An AI-powered application that generates marketing content based on user prompts and brand guidelines.",
-                tech: ["React", "Python", "OpenAI API", "AWS"],
+                  "A mod which allows you to craft armour trims.",
+                tech: ["Modrinth", "Neoforge", "Fabric", "Datapack"],
                 image: "/placeholder.svg?height=200&width=400",
               },
               {
-                title: "Real-time Chat Application",
-                description: "A secure messaging platform with end-to-end encryption, file sharing, and video calls.",
-                tech: ["React", "Socket.io", "Express", "PostgreSQL"],
+                title: "Subnautica in Minecraft",
+                description: 
+                  "A modpack which adds a bunch of mods to make Minecraft the new Subnautica!",
+                tech: ["Modrinth", "Neoforge", "Modpack", "Game"],
                 image: "/placeholder.svg?height=200&width=400",
               },
               {
-                title: "Task Management System",
+                title: "AceCommander09.tech",
                 description:
-                  "A collaborative project management tool with Kanban boards, time tracking, and automated reporting.",
-                tech: ["TypeScript", "React", "NestJS", "Redis"],
+                  "This website your on right now!.",
+                tech: ["TypeScript", "React", "Javascript", "Node.js"],
                 image: "/placeholder.svg?height=200&width=400",
               },
               {
-                title: "Fitness Tracking App",
+                title: "Call of Duty in Minecraft",
                 description:
-                  "A mobile-first application for tracking workouts, nutrition, and progress with personalized recommendations.",
-                tech: ["React Native", "GraphQL", "Node.js", "MongoDB"],
+                  "A modpack which adds call of duty into Minecraft with popular maps and mods!",
+                tech: ["Modrinth", "Neoforge", "Minecraft", "Game"],
                 image: "/placeholder.svg?height=200&width=400",
               },
               {
-                title: "Portfolio Website",
-                description: "A custom-designed portfolio website with animations, dark mode, and responsive design.",
-                tech: ["Next.js", "Framer Motion", "Tailwind CSS", "Vercel"],
+                title: "Minecraft Cathederal House",
+                description: "A cool 3D printable model of a Minecraft Cathederal!",
+                tech: ["Makerworld", "Fusion360", "BambuLab", "3D"],
                 image: "/placeholder.svg?height=200&width=400",
               },
             ].map((project, index) => (
