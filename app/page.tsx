@@ -244,7 +244,7 @@ export default function Home() {
               {
                 title: "Tools",
                 icon: <Terminal className="h-10 w-10 text-green-500" />,
-                skills: ["GitHub", "VS Code", "Vercel, "IntelliJ"],
+                skills: ["GitHub", "VS Code", "Vercel", "IntelliJ"],
               },
               {
                 title: "Other",
