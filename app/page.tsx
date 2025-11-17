@@ -309,6 +309,7 @@ export default function Home() {
                 tech: ["Modrinth", "Neoforge", "Datapack", "Fabric"],
                 image: "/projects/discoveria.jpg",
                 link: "https://modrinth.com/datapack/discoveria",
+                githubUrl: "https://github.com/AceCommander9/Discoveria",
               },
               {
                 title: "Craftable Armour Trims",
@@ -317,6 +318,7 @@ export default function Home() {
                 tech: ["Modrinth", "Neoforge", "Fabric", "Datapack"],
                 image: "/projects/craftable-armour-trims.jpg",
                 link: "https://modrinth.com/datapack/craftable-armour-trims",
+                githubUrl: "https://github.com/AceCommander9/Craftable-Armour-Trims",
               },
               {
                 title: "Subnautica in Minecraft",
@@ -333,6 +335,7 @@ export default function Home() {
                 tech: ["TypeScript", "React", "Javascript", "Node.js"],
                 image: "/projects/acecommander09-tech.jpg",
                 link: "https://www.acecommander09.tech/",
+                githubUrl: "https://github.com/AceCommander9/acecommander09.tech",
               },
               {
                 title: "Call of Duty in Minecraft",
@@ -378,9 +381,15 @@ export default function Home() {
                       ))}
                     </div>
                     <div className="flex justify-between mt-auto">
-                      <Button variant="ghost" className="text-green-500 hover:bg-green-500/10 p-0">
-                        <Github className="h-5 w-5" />
-                      </Button>
+                      {project.githubUrl && (
+                        <Button 
+                          variant="ghost" 
+                          className="text-green-500 hover:bg-green-500/10 p-0"
+                          onClick={() => window.open(project.githubUrl, "_blank")}
+                        >
+                          <Github className="h-5 w-5" />
+                        </Button>
+                      )}
                       <Button
                         variant="outline"
                         size="sm"
