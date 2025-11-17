@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Code, Rocket, Terminal, Github, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { Code, Rocket, Terminal, Github, Mail, ExternalLink, ChevronRight, Box, Boxes, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -396,41 +396,49 @@ export default function Home() {
           <SectionHeader title="Links" subtitle="Find me on other platforms" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
-            {/* Placeholder for future links */}
+            {/* Makerworld Link */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <Card className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors">
+              <Card
+                className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors cursor-pointer"
+                onClick={() => window.open("https://makerworld.com/en/@AceCommander492", "_blank")}
+              >
                 <CardContent className="p-6 text-center">
                   <div className="h-12 w-12 mx-auto mb-4 flex items-center justify-center bg-green-500/10 rounded-full">
-                    <ExternalLink className="h-6 w-6 text-green-500" />
+                    <Box className="h-6 w-6 text-green-500" />
                   </div>
-                  <h3 className="text-lg font-bold mb-2">Link 1</h3>
-                  <p className="text-gray-400 text-sm">Coming soon</p>
+                  <h3 className="text-lg font-bold mb-2">Makerworld</h3>
+                  <p className="text-gray-400 text-sm">@AceCommander492</p>
                 </CardContent>
               </Card>
             </motion.div>
 
+            {/* Modrinth Link */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <Card className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors">
+              <Card
+                className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors cursor-pointer"
+                onClick={() => window.open("https://modrinth.com/user/acecommander492", "_blank")}
+              >
                 <CardContent className="p-6 text-center">
                   <div className="h-12 w-12 mx-auto mb-4 flex items-center justify-center bg-green-500/10 rounded-full">
-                    <ExternalLink className="h-6 w-6 text-green-500" />
+                    <Boxes className="h-6 w-6 text-green-500" />
                   </div>
-                  <h3 className="text-lg font-bold mb-2">Link 2</h3>
-                  <p className="text-gray-400 text-sm">Coming soon</p>
+                  <h3 className="text-lg font-bold mb-2">Modrinth</h3>
+                  <p className="text-gray-400 text-sm">@acecommander492</p>
                 </CardContent>
               </Card>
             </motion.div>
 
+            {/* Discord Link */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -440,10 +448,10 @@ export default function Home() {
               <Card className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors">
                 <CardContent className="p-6 text-center">
                   <div className="h-12 w-12 mx-auto mb-4 flex items-center justify-center bg-green-500/10 rounded-full">
-                    <ExternalLink className="h-6 w-6 text-green-500" />
+                    <MessageCircle className="h-6 w-6 text-green-500" />
                   </div>
-                  <h3 className="text-lg font-bold mb-2">Link 3</h3>
-                  <p className="text-gray-400 text-sm">Coming soon</p>
+                  <h3 className="text-lg font-bold mb-2">Discord</h3>
+                  <p className="text-gray-400 text-sm">@acecommander09</p>
                 </CardContent>
               </Card>
             </motion.div>
