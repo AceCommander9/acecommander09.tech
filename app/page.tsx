@@ -380,7 +380,7 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                    <div className="flex justify-between mt-auto">
+                    <div className="flex justify-end gap-2 mt-auto">
                       {project.githubUrl && (
                         <Button 
                           variant="ghost" 
