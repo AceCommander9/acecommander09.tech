@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Code, Rocket, Terminal, Github, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { Code, Rocket, Terminal, Github, Mail, ExternalLink, ChevronRight, Box, Boxes, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -130,7 +130,10 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: 1 }}
                       className="flex gap-4"
                     >
-                      <Button className="bg-green-500 hover:bg-green-600 text-black">
+                      <Button
+                        className="bg-green-500 hover:bg-green-600 text-black"
+                        onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+                      >
                         View Projects <ChevronRight className="ml-2 h-4 w-4" />
                       </Button>
                     </motion.div>
@@ -180,7 +183,11 @@ export default function Home() {
                 I have made over 6 Minecraft mods on Modrinth and over 5 3D models on Makerworld.
               </p>
               <div className="flex gap-4 mt-6">
-                <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500/10">
+                <Button
+                  variant="outline"
+                  className="border-green-500 text-green-500 hover:bg-green-500/10"
+                  onClick={() => window.open("https://github.com/AceCommander9", "_blank")}
+                >
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Button>
               </div>
@@ -380,14 +387,78 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="flex justify-center mt-12">
-            <Button className="bg-green-500 hover:bg-green-600 text-black">
-              View All Projects <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
+      {/* Links Section */}
+      <section id="links" className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <SectionHeader title="Links" subtitle="Find me on other platforms" />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-4xl mx-auto">
+            {/* Makerworld Link */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card
+                className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors cursor-pointer"
+                onClick={() => window.open("https://makerworld.com/en/@AceCommander492", "_blank")}
+              >
+                <CardContent className="p-6 text-center">
+                  <div className="h-12 w-12 mx-auto mb-4 flex items-center justify-center bg-green-500/10 rounded-full">
+                    <Box className="h-6 w-6 text-green-500" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">Makerworld</h3>
+                  <p className="text-gray-400 text-sm">@AceCommander492</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Modrinth Link */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Card
+                className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors cursor-pointer"
+                onClick={() => window.open("https://modrinth.com/user/acecommander492", "_blank")}
+              >
+                <CardContent className="p-6 text-center">
+                  <div className="h-12 w-12 mx-auto mb-4 flex items-center justify-center bg-green-500/10 rounded-full">
+                    <Boxes className="h-6 w-6 text-green-500" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">Modrinth</h3>
+                  <p className="text-gray-400 text-sm">@acecommander492</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Discord Link */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Card className="bg-zinc-900/50 border border-green-500/20 overflow-hidden hover:border-green-500/40 transition-colors">
+                <CardContent className="p-6 text-center">
+                  <div className="h-12 w-12 mx-auto mb-4 flex items-center justify-center bg-green-500/10 rounded-full">
+                    <MessageCircle className="h-6 w-6 text-green-500" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">Discord</h3>
+                  <p className="text-gray-400 text-sm">@acecommander09</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           </div>
         </div>
       </section>
+
       {/* Footer */}
       <footer className="py-8 bg-black border-t border-green-500/20">
         <div className="container mx-auto px-4">
@@ -402,11 +473,13 @@ export default function Home() {
               &copy; {new Date().getFullYear()} AceCommander09. All rights reserved.
             </div>
             <div className="flex gap-4 mt-4 md:mt-0">
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-gray-400 hover:text-green-500"
+                onClick={() => window.open("https://github.com/AceCommander9", "_blank")}
+              >
                 <Github className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500">
-                <Mail className="h-5 w-5" />
               </Button>
             </div>
           </div>
