@@ -130,7 +130,10 @@ export default function Home() {
                       transition={{ duration: 0.5, delay: 1 }}
                       className="flex gap-4"
                     >
-                      <Button className="bg-green-500 hover:bg-green-600 text-black">
+                      <Button
+                        className="bg-green-500 hover:bg-green-600 text-black"
+                        onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+                      >
                         View Projects <ChevronRight className="ml-2 h-4 w-4" />
                       </Button>
                     </motion.div>
@@ -383,12 +386,6 @@ export default function Home() {
                 </Card>
               </motion.div>
             ))}
-          </div>
-
-          <div className="flex justify-center mt-12">
-            <Button className="bg-green-500 hover:bg-green-600 text-black">
-              View All Projects <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
           </div>
         </div>
       </section>
