@@ -244,12 +244,12 @@ export default function Home() {
               {
                 title: "Tools",
                 icon: <Terminal className="h-10 w-10 text-green-500" />,
-                skills: ["GitHub", "VS Code", "Vercel"],
+                skills: ["GitHub", "VS Code", "Vercel, "IntelliJ"],
               },
               {
                 title: "Other",
                 icon: <Code className="h-10 w-10 text-green-500" />,
-                skills: ["Agile", "UI/UX Design", "WebSockets", "Testing"],
+                skills: ["IntelliJ", "UI Design", "n8n", "Nextcloud"],
               },
             ].map((category, index) => (
               <motion.div
