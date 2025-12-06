@@ -69,6 +69,20 @@ export default function Home() {
                 {section}
               </a>
             ))}
+            <a
+              href="/games"
+              className="font-mono text-sm uppercase tracking-wider transition-colors hover:text-green-400 text-gray-400"
+            >
+              <span className="text-green-500 mr-1">/</span>
+              games
+            </a>
+            <a
+              href="/emulator"
+              className="font-mono text-sm uppercase tracking-wider transition-colors hover:text-green-400 text-gray-400"
+            >
+              <span className="text-green-500 mr-1">/</span>
+              emulator
+            </a>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
